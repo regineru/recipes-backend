@@ -1,5 +1,4 @@
-# recipes-project
-Collaborative web project
+# recipes-backend
 
 [WIP] Setup help: 
 - Project: https://bezkoder.com/node-js-express-sequelize-mysql/
