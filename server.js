@@ -11,7 +11,7 @@ db.sequelize.sync({ force: true }).then(() => {
 });
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8081" //denne peker på frontenden
 };
 
 app.use(cors(corsOptions));
@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 });
 
 
-require("./app/routes/tutorials.routes")(app);
+require("./app/routes/tutorial.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
